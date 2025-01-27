@@ -1,0 +1,141 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ab1f36e5-6467-4bfb-9957-01a7731d454f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter the student's last name (or 'ZZZ' to quit):  hamilton\n",
+      "Enter the student's first name:  george\n",
+      "Enter the student's GPA:  3.8\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "george hamilton has made the Dean's List.\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter the student's last name (or 'ZZZ' to quit):  Sam\n",
+      "Enter the student's first name:  hunt\n",
+      "Enter the student's GPA:  2.4\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "hunt Sam does not qualify for the Dean's List or Honor Roll.\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter the student's last name (or 'ZZZ' to quit):  brooke \n",
+      "Enter the student's first name:  waggner\n",
+      "Enter the student's GPA:  3.2\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "waggner brooke does not qualify for the Dean's List or Honor Roll.\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter the student's last name (or 'ZZZ' to quit):  tom \n",
+      "Enter the student's first name:  bronson\n",
+      "Enter the student's GPA:  3.3\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "bronson tom has made the Honor Roll.\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Author: Your Name\n",
+    "# File Name: student_gpa_qualifications.py\n",
+    "# Description: This app accepts student names and GPAs and determines if they qualify for the Dean's List or Honor Roll.\n",
+    "\n",
+    "def main():\n",
+    "    while True:\n",
+    "        # Accept the student's last name\n",
+    "        last_name = input(\"Enter the student's last name (or 'ZZZ' to quit): \").strip()\n",
+    "        \n",
+    "        # Quit if the last name is 'ZZZ'\n",
+    "        if last_name.upper() == 'ZZZ':\n",
+    "            print(\"Exiting the program.\")\n",
+    "            break\n",
+    "\n",
+    "        # Accept the student's first name\n",
+    "        first_name = input(\"Enter the student's first name: \").strip()\n",
+    "\n",
+    "        # Accept the student's GPA and validate the input\n",
+    "        try:\n",
+    "            gpa = float(input(\"Enter the student's GPA: \"))\n",
+    "        except ValueError:\n",
+    "            print(\"Invalid GPA. Please enter a numeric value.\")\n",
+    "            continue\n",
+    "\n",
+    "        # Check if the student qualifies for the Dean's List or Honor Roll\n",
+    "        if gpa >= 3.5:\n",
+    "            print(f\"{first_name} {last_name} has made the Dean's List.\")\n",
+    "        elif gpa >= 3.25:\n",
+    "            print(f\"{first_name} {last_name} has made the Honor Roll.\")\n",
+    "        else:\n",
+    "            print(f\"{first_name} {last_name} does not qualify for the Dean's List or Honor Roll.\")\n",
+    "\n",
+    "if __name__ == \"__main__\":\n",
+    "    main()\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "35a5c221-d441-4ecd-8627-c68411169431",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "anaconda-2024.02-py310",
+   "language": "python",
+   "name": "conda-env-anaconda-2024.02-py310-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.14"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
