@@ -1,0 +1,191 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "bc6b9f34-56e2-4932-927a-4b1f85b2049f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "too low\n",
+      "cherry\n",
+      "Task 6.1:\n",
+      "3\n",
+      "2\n",
+      "1\n",
+      "0\n",
+      "Task 6.2:\n",
+      "too low\n",
+      "too low\n",
+      "too low\n",
+      "too low\n",
+      "too low\n",
+      "too low\n",
+      "found it!\n",
+      "Task 6.3:\n",
+      "too low\n",
+      "too low\n",
+      "too low\n",
+      "too low\n",
+      "too low\n",
+      "found it!\n"
+     ]
+    },
+    {
+     "ename": "NameError",
+     "evalue": "name 'main' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn[1], line 61\u001b[0m\n\u001b[1;32m     58\u001b[0m         \u001b[38;5;28;01mbreak\u001b[39;00m\n\u001b[1;32m     60\u001b[0m \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;18m__name__\u001b[39m \u001b[38;5;241m==\u001b[39m \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124m__main__\u001b[39m\u001b[38;5;124m\"\u001b[39m:\n\u001b[0;32m---> 61\u001b[0m     \u001b[43mmain\u001b[49m()\n",
+      "\u001b[0;31mNameError\u001b[0m: name 'main' is not defined"
+     ]
+    }
+   ],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "9794c55e-51a2-4a5f-ab85-cf6d54bdf494",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "too low\n",
+      "cherry\n",
+      "Task 6.1:\n",
+      "3\n",
+      "2\n",
+      "1\n",
+      "0\n",
+      "Task 6.2:\n",
+      "too low\n",
+      "too low\n",
+      "too low\n",
+      "too low\n",
+      "too low\n",
+      "too low\n",
+      "found it!\n",
+      "Task 6.3:\n",
+      "too low\n",
+      "too low\n",
+      "too low\n",
+      "too low\n",
+      "too low\n",
+      "found it!\n"
+     ]
+    },
+    {
+     "ename": "NameError",
+     "evalue": "name 'main' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn[5], line 61\u001b[0m\n\u001b[1;32m     58\u001b[0m         \u001b[38;5;28;01mbreak\u001b[39;00m\n\u001b[1;32m     60\u001b[0m \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;18m__name__\u001b[39m \u001b[38;5;241m==\u001b[39m \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124m__main__\u001b[39m\u001b[38;5;124m\"\u001b[39m:\n\u001b[0;32m---> 61\u001b[0m     \u001b[43mmain\u001b[49m()\n",
+      "\u001b[0;31mNameError\u001b[0m: name 'main' is not defined"
+     ]
+    }
+   ],
+   "source": [
+    "# Task 4.1: Guessing game\n",
+    "secret = 7\n",
+    "guess = 5  # Example guess\n",
+    "\n",
+    "if guess < secret:\n",
+    "    print(\"too low\")\n",
+    "elif guess > secret:\n",
+    "    print(\"too high\")\n",
+    "else:\n",
+    "    print(\"just right\")\n",
+    "\n",
+    "# Task 4.2: Determine the object based on characteristics\n",
+    "small = True\n",
+    "green = False\n",
+    "\n",
+    "if small and green:\n",
+    "    print(\"pea\")\n",
+    "elif small and not green:\n",
+    "    print(\"cherry\")\n",
+    "elif not small and green:\n",
+    "    print(\"watermelon\")\n",
+    "else:\n",
+    "    print(\"pumpkin\")\n",
+    "\n",
+    "# Task 6.1: For loop to print list values\n",
+    "print(\"Task 6.1:\")\n",
+    "for value in [3, 2, 1, 0]:\n",
+    "    print(value)\n",
+    "\n",
+    "# Task 6.2: While loop comparing number with guess_me\n",
+    "print(\"Task 6.2:\")\n",
+    "guess_me = 7\n",
+    "number = 1\n",
+    "\n",
+    "while True:\n",
+    "    if number < guess_me:\n",
+    "        print(\"too low\")\n",
+    "    elif number == guess_me:\n",
+    "        print(\"found it!\")\n",
+    "        break\n",
+    "    else:\n",
+    "        print(\"oops\")\n",
+    "        break\n",
+    "    number += 1\n",
+    "\n",
+    "# Task 6.3: For loop with range and guess_me\n",
+    "print(\"Task 6.3:\")\n",
+    "guess_me = 5\n",
+    "\n",
+    "for number in range(10):\n",
+    "    if number < guess_me:\n",
+    "        print(\"too low\")\n",
+    "    elif number == guess_me:\n",
+    "        print(\"found it!\")\n",
+    "        break\n",
+    "    else:\n",
+    "        print(\"oops\")\n",
+    "        break\n",
+    "\n",
+    "if __name__ == \"__main__\":\n",
+    "    main()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "3955770d-6903-4be0-b066-c27c73950adc",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "anaconda-ai-2024.04-py310",
+   "language": "python",
+   "name": "conda-env-anaconda-ai-2024.04-py310-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.13"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
